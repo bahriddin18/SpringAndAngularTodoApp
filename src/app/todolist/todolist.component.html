@@ -1,0 +1,19 @@
+<table [border]="todos">
+  <caption>My Todos</caption>
+  <thead>
+  <tr>
+    <th>Rate</th>
+    <th>Name</th>
+    <th>Love</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let todo of todos">
+    <td>{{todo.rate}}</td>
+    <td>{{todo.name}}</td>
+    <td>{{todo.love}}</td>
+    <td>{{todo.date.getDate()}}</td>
+  </tr>
+  </tbody>
+</table>
